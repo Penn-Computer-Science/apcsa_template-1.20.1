@@ -1,0 +1,41 @@
+{
+	"schemaVersion": 1,
+	"id": "apcsa_rename_me",
+	"version": "${version}",
+	"name": "APCSA_RENAME_ME",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Me!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/apcsa_rename_me/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"apcsa.RENAME_ME.APCSA_RENAME_ME"
+		],
+		"client": [
+			"apcsa.RENAME_ME.client.APCSA_RENAME_MEClient"
+		],
+		"fabric-datagen": [
+			"apcsa.RENAME_ME.client.APCSA_RENAME_MEDataGenerator"
+		]
+	},
+	"mixins": [
+		"apcsa_rename_me.mixins.json",
+		{
+			"config": "apcsa_rename_me.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=0.19.2",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
