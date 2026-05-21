@@ -128,6 +128,7 @@ def refactor(username:str, modname:str):
 	replaceInFile(f"src/main/resources/assets/{username}/lang/en_us.json", "apcsa_rename_me", username)
 	replaceInFile(f"src/main/resources/{username}.mixins.json", "apcsa.template", f"apcsa.{username}")
 	replaceInFile(f"src/main/resources/data/{username}/loot_tables/blocks/test_block.json", "apcsa_rename_me", username)
+	replaceInFile(f"src/main/resources/data/{username}/recipes/test_block.json", "apcsa", username)
 
 	# Tags
 	prLightGray("\nReplacing tag indetifiers...")

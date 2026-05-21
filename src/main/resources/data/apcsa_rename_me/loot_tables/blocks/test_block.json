@@ -6,7 +6,7 @@
 			"entries": [
 				{
 					"type": "minecraft:item",
-					"name": "apcsa_rename_me:condensed_dirt"
+					"name": "apcsa_rename_me:test_item"
 				}
 			],
 			"conditions": [

@@ -36,5 +36,8 @@ If it asks you to download a `Minecraft Development` plugin, install it and rest
 
 [Fabric Maven API](https://maven.fabricmc.net/docs/yarn-1.20.1+build.1/index.html) - This is the closest thing I could find to the `1.20.1` docs (it's scary)
 
+
+[Recipe Generator](https://crafting.thedestruc7i0n.ca/) - Make sure to change the version to be `Java 1.19.4` (you will have to edit it manually to add your modded items)
+
 ## License
 This template is available under the CC0 license. Feel free to learn from it and incorporate it in your own projects.
