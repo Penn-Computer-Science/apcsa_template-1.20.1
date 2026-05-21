@@ -1,3 +1,4 @@
 {
-	"block.apcsa_rename_me.test_block": "Test Block"
+	"block.apcsa_rename_me.test_block": "Test Block",
+	"item.apcsa_rename_me.test_block": "Test Item"
 }
