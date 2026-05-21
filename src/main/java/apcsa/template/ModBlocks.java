@@ -58,7 +58,7 @@ public class ModBlocks
      */
     public static void register()
     {
-        // Put your registered blocks here
+        // Put your blocks here
         registerBlock("test_block", TEST_BLOCK, Mod.ITEM_DEFAULT_SETTINGS);
     }
 }
