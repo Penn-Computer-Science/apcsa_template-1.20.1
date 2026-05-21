@@ -1,6 +1,6 @@
 {
 	"parent": "minecraft:block/cube_all",
 	"textures": {
-		"all": "apcsa_rename_me:block/condensed_dirt"
+		"all": "apcsa_rename_me:block/test_block"
 	}
 }
