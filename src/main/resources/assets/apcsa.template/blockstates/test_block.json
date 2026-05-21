@@ -1,0 +1,7 @@
+{
+	"variants": {
+		"": {
+			"model": "apcsa_rename_me:block/test_block"
+		}
+	}
+}
