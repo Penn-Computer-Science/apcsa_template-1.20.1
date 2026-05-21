@@ -52,10 +52,13 @@ def prGreen(s):
     print(color(s, "1;92"))
 
 def prCyan(s):
-    print(color(s, "1;96"))
+    print(color(s, "0;96"))
 
 def prLightGray(s):
     print(color(s, "1;97"))
+
+def prRed(s):
+	print(color(s, "1;91"))
 
 def checkBool(prefix:str):
 	while True:
@@ -67,25 +70,37 @@ def checkBool(prefix:str):
 		
 		print("Please put Y or N.")
 
-def renameFolder(path: str, name: str):
-    folder = Path(path)
+def renameFolder(path:str, name:str):
+	folder = Path(path)
 
-    new_path = folder.with_name(name)
-    folder.rename(new_path)
+	if not folder.exists():
+		prRed(f"\tFolder {path} does not exist")
+		return
 
-    prCyan(f"\tRenamed {path} to {new_path}")
+	new_path = folder.with_name(name)
+	folder.rename(new_path)
 
-def renameFile(path: str, name: str):
-    file = Path(path)
+	prCyan(f"\tRenamed {path} to {new_path}")
 
-    new_path = file.with_name(name)
-    file.rename(new_path)
+def renameFile(path:str, name:str):
+	file = Path(path)
 
-    prCyan(f"\tRenamed {path} to {new_path}")
+	if not file.exists():
+		prRed(f"\tFile {path} does not exist")
+		return
+
+	new_path = file.with_name(name)
+	file.rename(new_path)
+
+	prCyan(f"\tRenamed {path} to {new_path}")
 
 def replaceInFile(path:str, original:str, replace:str):
 	filePath = Path(path)
-	
+
+	if not filePath.exists():
+		prRed(f"\tFile {path} does not exist")
+		return
+
 	content = filePath.read_text()
 	content = content.replace(original, replace)
 
