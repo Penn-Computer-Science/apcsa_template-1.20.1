@@ -1,0 +1,6 @@
+{
+	"parent": "minecraft:item/generated",
+	"textures": {
+		"layer0": "apcsa_rename_me:item/example_item"
+	}
+}
