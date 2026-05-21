@@ -51,7 +51,10 @@ public class ModBlocks
     }
 
     // Blocks
-    public static final Block TEST_BLOCK = makeBlock(Mod.BLOCK_DEFAULT_SETTINGS);
+    public static final Block TEST_BLOCK = makeBlock(
+            FabricBlockSettings.create()
+                .requiresTool()
+                .strength(3.0f, 3.0f));
 
     /**
      * Registers all the blocks
