@@ -1,4 +1,4 @@
-package apcsa.TESTING;
+package apcsa.template;
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
@@ -45,13 +45,13 @@ public class ModBlocks
         MOD_BLOCKS.add(block);
 
         // Add the block to the register
-        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(APCSA_RENAME_ME.MOD_ID, id), block);
+        Registry.register(BuiltInRegistries.BLOCK, new ResourceLocation(Mod.MOD_ID, id), block);
         // Add the block item to the register
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(APCSA_RENAME_ME.MOD_ID, id), _ITEM);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Mod.MOD_ID, id), _ITEM);
     }
 
     // Blocks
-    public static final Block TEST_BLOCK = makeBlock(APCSA_RENAME_ME.BLOCK_DEFAULT_SETTINGS);
+    public static final Block TEST_BLOCK = makeBlock(Mod.BLOCK_DEFAULT_SETTINGS);
 
     /**
      * Registers all the blocks
@@ -59,6 +59,6 @@ public class ModBlocks
     public static void register()
     {
         // Put your registered blocks here
-        registerBlock("test_block", TEST_BLOCK, APCSA_RENAME_ME.ITEM_DEFAULT_SETTINGS);
+        registerBlock("test_block", TEST_BLOCK, Mod.ITEM_DEFAULT_SETTINGS);
     }
 }

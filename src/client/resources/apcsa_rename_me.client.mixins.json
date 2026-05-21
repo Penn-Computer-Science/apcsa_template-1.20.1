@@ -1,6 +1,6 @@
 {
 	"required": true,
-	"package": "apcsa.RENAME_ME.client.mixin",
+	"package": "apcsa.template.client.mixin",
 	"compatibilityLevel": "JAVA_17",
 	"client": [
 		"ExampleClientMixin"

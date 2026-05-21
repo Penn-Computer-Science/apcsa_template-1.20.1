@@ -1,4 +1,4 @@
-package apcsa.TESTING;
+package apcsa.template;
 
 
 import net.fabricmc.fabric.api.item.v1.FabricItemSettings;
@@ -14,10 +14,10 @@ public class ModItems
         return new Item(itemSettings);
     }
 
-    public static final Item TEST_ITEM = makeItem(APCSA_RENAME_ME.ITEM_DEFAULT_SETTINGS);
+    public static final Item TEST_ITEM = makeItem(Mod.ITEM_DEFAULT_SETTINGS);
 
     public static void register()
     {
-        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(APCSA_RENAME_ME.MOD_ID, "test_item"), TEST_ITEM);
+        Registry.register(BuiltInRegistries.ITEM, new ResourceLocation(Mod.MOD_ID, "test_item"), TEST_ITEM);
     }
 }
