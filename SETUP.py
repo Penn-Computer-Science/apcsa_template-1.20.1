@@ -132,7 +132,7 @@ def refactor(username:str, modname:str):
 
 	# Tags
 	prLightGray("\nReplacing tag indetifiers...")
-	replaceInFile(f"src/main/resources/data/minecraft/tags/blocks/mineable/shovel.json", "apcsa_rename_me", username)
+	replaceInFile(f"src/main/resources/data/minecraft/tags/blocks/mineable/pickaxe.json", "apcsa_rename_me", username)
 	replaceInFile(f"src/main/resources/data/minecraft/tags/blocks/needs_stone_tool.json", "apcsa_rename_me", username)
 
 	# Block/Item Stuff
