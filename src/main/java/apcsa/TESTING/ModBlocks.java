@@ -1,4 +1,4 @@
-package apcsa.RENAME_ME;
+package apcsa.TESTING;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.core.Registry;
@@ -19,6 +19,7 @@ public class ModBlocks {
 					.sound(SoundType.GRAVEL)
 					.requiresCorrectToolForDrops())
 	);
+
 
 	public static void initialize() {
 		ItemGroupEvents.modifyEntriesEvent(CreativeModeTabs.NATURAL_BLOCKS).register(entries -> {

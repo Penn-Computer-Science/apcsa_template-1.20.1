@@ -1,4 +1,4 @@
-package apcsa.RENAME_ME.client;
+package apcsa.TESTING.client;
 
 import net.fabricmc.api.ClientModInitializer;
 
